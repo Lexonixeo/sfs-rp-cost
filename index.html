@@ -4,14 +4,19 @@
 		<title>Расчет стоимости</title>
 </head>
 <body>
-	<h1>Рассчёт стоимости вашего аппарата в SFS</h1>
+	<h1>Расчёт стоимости вашего аппарата в SFS</h1>
+	Если перед загрузкой на странице уже есть данные, перезагрузите страницу.
 		<input type="file" name="bp" id="bp" style="width: 100%">
 		<p id="costp"></p>
 		<p id="out"></p>
 		
 		<script>var costs = [
-                {
+    {
       "n": "Capsule",
+      "cost": 60000
+    },
+    {
+      "n": "CapsuleNew",
       "cost": 60000
     },
     {
@@ -128,22 +133,34 @@
     {
       "n": "Landing Leg Big",
       "cost": 8000
-    }
+    },
 	{
       "n": "Heat Shield",
       "cost": 5000,
 	  "width": true
     },
 	{
+      "n": "Heat Shield Hollow",
+      "cost": 5000,
+	  "width": true
+    },
+	{
       "n": "Base Small",
       "cost": 5000,
-	  "areas": true,
-	  "fuel": true,
+	  "areat": true,
+	  "fuelt": true,
 	  "fuelCost": 500
     },
+	{
+      "n": "Base",
+      "cost": 5000,
+	  "areat": true,
+	  "fuelt": true,
+	  "fuelCost": 500
+    }
   ]
   </script>
 		<script src="script.js"></script>
-		<div>Автор: llǝɥɔɯɹoʍ#3395. Его <a href="https://manfromfms.github.io/">GitHub</a>. Переделал Lexonix</div>
+		<div>Автор: llǝɥɔɯɹoʍ#3395. Его <a href="https://manfromfms.github.io/">GitHub</a>. Переделал Lexonix.</div>
 </body>
 </html>
