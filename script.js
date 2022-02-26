@@ -44,6 +44,9 @@ bp.addEventListener('change', (event) => {
   								if(costs[sil].fuel) {
   												fu += costs[sil].fuelCost * input[i].N.height * (input[i].N.width_a + input[i].N.width_b) / 2 * input[i].N.fuel_percent
   												console.log(input[0].n + " fuel: " + fu)
+  								} else if(costs[sil].fuelt) {
+  												fu += costs[sil].fuelCost * input[i].N.width * input[i].N.height / 2 * input[i].N.fuel_percent
+  												console.log(input[0].n + " fuel: " + fu)
   								}
   								
   								cost += dc
