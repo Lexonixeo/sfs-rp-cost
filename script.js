@@ -37,6 +37,8 @@ bp.addEventListener('change', (event) => {
   												dc = costs[sil].cost * input[i].N.height * (input[i].N.width_a + input[i].N.width_b) / 2
   								} else if(costs[sil].areat) {
   												dc = costs[sil].cost * input[i].N.width * input[i].N.height / 2
+  								} else if(costs[sil].esize) {
+  												dc = costs[sil].cost * input[i].o.x * input[i].o.y
   								} else {
   												dc = costs[sil].cost
   								}
