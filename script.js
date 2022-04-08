@@ -38,7 +38,7 @@ bp.addEventListener('change', (event) => {
   								} else if(costs[sil].areat) {
   												dc = costs[sil].cost * input[i].N.width * input[i].N.height / 2
   								} else if(costs[sil].esize) {
-  												dc = Math.abs(costs[sil].cost * input[i].o.x * input[i].o.y)
+  												dc = Math.abs(costs[sil].cost * input[i].o.y)
   								} else {
   												dc = costs[sil].cost
   								}
